@@ -1,0 +1,26 @@
+# Two-Stage Document Retrieval — pipeline configuration
+
+chunking:
+  similarity_threshold: 0.12
+
+embeddings:
+  # "tfidf_lsa"            -> TfidfLsaEncoder, real, offline, no model download (default)
+  # "sentence_transformers" -> SentenceTransformerEncoder, real neural bi-encoder
+  #                             (requires network access + model weights)
+  provider: tfidf_lsa
+  # Deliberately small: a lossy, compressed embedding is the realistic
+  # regime two-stage retrieval targets (see embeddings.py for why).
+  n_components: 8
+
+reranker:
+  # "bm25"           -> BM25Reranker, real, offline, classical joint lexical ranker (default)
+  # "cross_encoder"  -> CrossEncoderReranker, real neural cross-encoder
+  #                     (requires network access + model weights)
+  provider: bm25
+
+llm:
+  # "extractive"      -> ExtractiveComposer, deterministic, offline (default)
+  # "open_source_llm" -> OpenSourceLLMComposer, real OpenAI-compatible endpoint
+  provider: extractive
+  model: llama3.1
+  base_url: http://localhost:11434/v1

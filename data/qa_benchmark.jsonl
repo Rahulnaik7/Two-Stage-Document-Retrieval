@@ -1,0 +1,70 @@
+{"id": "q01", "document_id": "semantic-chunking", "question": "How does semantic drop chunking decide where to split a document?"}
+{"id": "q02", "document_id": "semantic-chunking", "question": "Why does keeping related sentences in one chunk help retrieval accuracy?"}
+{"id": "q03", "document_id": "stage-one", "question": "What role does the vector index play in the first retrieval stage?"}
+{"id": "q04", "document_id": "stage-one", "question": "Why are the query and each chunk embedded separately before searching?"}
+{"id": "q05", "document_id": "stage-two", "question": "How does the second stage re-score candidates from the first stage?"}
+{"id": "q06", "document_id": "stage-two", "question": "What's the benefit of scoring the question and passage together instead of comparing embeddings?"}
+{"id": "q07", "document_id": "answering", "question": "What rule keeps the generated answer from making up unsupported claims?"}
+{"id": "q08", "document_id": "answering", "question": "How should a grounded response treat the evidence it was given?"}
+{"id": "q09", "document_id": "http-caching", "question": "Which response header lets a browser avoid re-downloading a page that hasn't changed?"}
+{"id": "q10", "document_id": "http-caching", "question": "What status code tells a client its cached copy of a web page is still valid?"}
+{"id": "q11", "document_id": "cpu-caching", "question": "Why do processors keep a small, fast memory close to each core?"}
+{"id": "q12", "document_id": "cpu-caching", "question": "What happens to a CPU's pipeline when the data it needs isn't in cache?"}
+{"id": "q13", "document_id": "message-queues", "question": "How do systems like RabbitMQ let a producer keep working without waiting on the consumer?"}
+{"id": "q14", "document_id": "message-queues", "question": "What happens to a job that keeps failing to process from a queue?"}
+{"id": "q15", "document_id": "priority-queue", "question": "What data structure is typically used to always return the most urgent item first?"}
+{"id": "q16", "document_id": "priority-queue", "question": "Why is a binary heap a good fit for Dijkstra's shortest-path algorithm?"}
+{"id": "q17", "document_id": "db-sharding", "question": "What problem can happen if rows aren't spread evenly across a sharded database?"}
+{"id": "q18", "document_id": "db-sharding", "question": "Why do cross-shard transactions get expensive once a table is split across servers?"}
+{"id": "q19", "document_id": "css-flexbox", "question": "Which CSS properties control how items are spaced out inside a flex container?"}
+{"id": "q20", "document_id": "css-flexbox", "question": "Why is flexbox well suited to building something like a navigation bar?"}
+{"id": "q21", "document_id": "oauth2", "question": "How does a user let an app access their account without handing over a password?"}
+{"id": "q22", "document_id": "oauth2", "question": "What lets a client get a new access token after the old one has expired?"}
+{"id": "q23", "document_id": "jwt", "question": "Why shouldn't sensitive information be stored inside a signed token's payload?"}
+{"id": "q24", "document_id": "jwt", "question": "How can a server verify a bearer token without checking a database?"}
+{"id": "q25", "document_id": "websockets", "question": "What kind of connection lets a server push updates to a client without being polled?"}
+{"id": "q26", "document_id": "websockets", "question": "Why would a chat application prefer this protocol over regular HTTP requests?"}
+{"id": "q27", "document_id": "rate-limiting", "question": "Which algorithm allows short bursts of traffic while still enforcing an average limit?"}
+{"id": "q28", "document_id": "rate-limiting", "question": "Why would an API cap how many requests a single client can make?"}
+{"id": "q29", "document_id": "cap-theorem", "question": "Which two guarantees does a distributed store have to choose between during a network partition?"}
+{"id": "q30", "document_id": "cap-theorem", "question": "Why can't a distributed database promise consistency, availability, and partition tolerance all at once?"}
+{"id": "q31", "document_id": "raft-consensus", "question": "How does a cluster pick a new leader if the current one stops responding?"}
+{"id": "q32", "document_id": "raft-consensus", "question": "When is a replicated log entry considered safely committed?"}
+{"id": "q33", "document_id": "load-balancing", "question": "How does a load balancer stop sending traffic to a server that's down?"}
+{"id": "q34", "document_id": "load-balancing", "question": "What are some strategies for spreading requests across a pool of servers?"}
+{"id": "q35", "document_id": "git-rebase", "question": "What's the difference between replaying commits on a new base and merging two histories?"}
+{"id": "q36", "document_id": "git-rebase", "question": "Why can rewriting shared commit history cause trouble for collaborators?"}
+{"id": "q37", "document_id": "python-asyncio", "question": "How does a single-threaded event loop handle many I/O tasks concurrently?"}
+{"id": "q38", "document_id": "python-asyncio", "question": "What happens if a coroutine never yields control back to the event loop?"}
+{"id": "q39", "document_id": "gil", "question": "Why doesn't adding more threads speed up CPU-bound Python code?"}
+{"id": "q40", "document_id": "gil", "question": "What's an alternative to threads for parallelizing CPU-heavy work in Python?"}
+{"id": "q41", "document_id": "b-tree-index", "question": "Why can a lookup in a large table touch only a few disk pages?"}
+{"id": "q42", "document_id": "b-tree-index", "question": "What kind of tree structure do most relational databases use for indexing?"}
+{"id": "q43", "document_id": "bloom-filter", "question": "What kind of answer does a space-efficient membership structure give \u2014 definite or probabilistic?"}
+{"id": "q44", "document_id": "bloom-filter", "question": "How do databases use this structure to avoid unnecessary disk reads?"}
+{"id": "q45", "document_id": "docker-layers", "question": "Why does the order of instructions in a Dockerfile affect build speed?"}
+{"id": "q46", "document_id": "docker-layers", "question": "What gets added on top of the read-only layers when a container actually runs?"}
+{"id": "q47", "document_id": "kubernetes-pods", "question": "What gives a set of ephemeral pods a stable address that other services can rely on?"}
+{"id": "q48", "document_id": "kubernetes-pods", "question": "What's the smallest unit you can deploy in this container orchestration system?"}
+{"id": "q49", "document_id": "regex-backtracking", "question": "What can cause a pattern match to take exponentially longer as input grows?"}
+{"id": "q50", "document_id": "regex-backtracking", "question": "How does a backtracking engine recover after a chosen alternative fails to match?"}
+{"id": "q51", "document_id": "unicode-encoding", "question": "Why can a string's length in bytes differ from its length in characters?"}
+{"id": "q52", "document_id": "unicode-encoding", "question": "Which encoding stays backward compatible with the first 128 ASCII characters?"}
+{"id": "q53", "document_id": "cron-scheduling", "question": "What problem can occur if a scheduled job takes longer to run than its interval?"}
+{"id": "q54", "document_id": "cron-scheduling", "question": "What fields make up a recurring schedule expression?"}
+{"id": "q55", "document_id": "dns-resolution", "question": "What's cached at each step while a domain name is being resolved?"}
+{"id": "q56", "document_id": "dns-resolution", "question": "What trade-off comes with setting a low TTL on a DNS record?"}
+{"id": "q57", "document_id": "tcp-handshake", "question": "What three messages are exchanged before a reliable connection is considered open?"}
+{"id": "q58", "document_id": "tcp-handshake", "question": "Why do both sides need to synchronize sequence numbers before sending data?"}
+{"id": "q59", "document_id": "garbage-collection", "question": "Why are young objects collected more often than old ones in a generational collector?"}
+{"id": "q60", "document_id": "garbage-collection", "question": "What happens to an object that survives enough collection cycles?"}
+{"id": "q61", "document_id": "circuit-breaker", "question": "What does a resilience pattern do after a dependency fails repeatedly?"}
+{"id": "q62", "document_id": "circuit-breaker", "question": "How does short-circuiting calls to a failing service help it recover?"}
+{"id": "q63", "document_id": "idempotency-keys", "question": "How can a client safely retry a payment request without risking a double charge?"}
+{"id": "q64", "document_id": "idempotency-keys", "question": "What does a server store so it can return the same result for a repeated request?"}
+{"id": "q65", "document_id": "vector-quantization", "question": "How does splitting a vector into sub-vectors help compress a large embedding index?"}
+{"id": "q66", "document_id": "vector-quantization", "question": "What's the trade-off of using an approximate search technique instead of an exact one?"}
+{"id": "q67", "document_id": "bm25-ranking", "question": "How does a lexical ranking function keep extremely long documents from dominating results?"}
+{"id": "q68", "document_id": "bm25-ranking", "question": "Which factors does a classical scoring function combine besides term frequency?"}
+{"id": "q69", "document_id": "connection-pooling", "question": "Why is reusing an already-open database connection cheaper than opening a new one each time?"}
+{"id": "q70", "document_id": "connection-pooling", "question": "What does a request do with a pooled connection once it's finished?"}
